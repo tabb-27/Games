@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bogb4wejmgvqj"]
+
+[ext_resource type="Script" uid="uid://dlsuol28mdaeu" path="res://Scenes/the_void.gd" id="1_g703r"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g703r"]
+normal = Vector2(0.003053421, -0.99999535)
+
+[node name="TheVoid" type="Area2D"]
+script = ExtResource("1_g703r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(903, -48.5)
+shape = SubResource("WorldBoundaryShape2D_g703r")
